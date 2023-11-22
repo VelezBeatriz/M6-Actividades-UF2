@@ -1,5 +1,5 @@
 // IMPORT COMPONENTS
-import { insertar } from '../componentes/comentarios.js'
+import { comentarios } from '../componentes/comentarios.js'
 
 // IMPORT misFunciones
 import { bd } from '../database/bd.js'
@@ -24,7 +24,7 @@ const main = {
             </form>
         </div>
         <div id=allComments class="mt-4">
-          ${insertar(bd)}
+          ${comentarios.script(bd)}
         </div>
 
     </main>

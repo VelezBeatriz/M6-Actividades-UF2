@@ -1,18 +1,21 @@
 // IMPORT COMPONENT
 import { comentario } from './comentario.js'
 
-const insertar = (array) => {
-  let row = ''
+const comentarios = {
 
-  array.forEach(element => {
-    row +=
+  script: (array) => {
+    let row = ''
+
+    array.forEach(element => {
+      row +=
       `
       ${comentario.script(element.autor, element.fecha, element.comentario)}
       `
-  })
+    })
 
-  return row
+    return row
+  }
 }
 
 // EXPORT
-export { insertar }
+export { comentarios }
